@@ -16,17 +16,7 @@ export class AppComponent implements OnInit{
   }
   ngOnInit(): void {
 
-    // Check if user is logged in here
-    if (true) {
-    fetch('https://fakestoreapi.com/products')
-            .then(res=>res.json())
-            .then(json=> {
-              this.products = json;
-              console.log(json);
-            });
-    } else {
-      this.router.navigateByUrl('/login');
-    }
+
   }
 
 

@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {EmptyRouteComponent} from './empty-route/empty-route.component';
 import {APP_BASE_HREF} from '@angular/common';
+import { ProductsComponent } from './products/products.component';
 @NgModule({
   declarations: [
     AppComponent,
-    EmptyRouteComponent
+    EmptyRouteComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
