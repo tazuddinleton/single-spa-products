@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { testExportFunc } from '@kaz/auth';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -11,6 +11,8 @@ export class ProductsComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    testExportFunc('Products');
+
     // Check if user is logged in here
     if (true) {
     fetch('https://fakestoreapi.com/products')
