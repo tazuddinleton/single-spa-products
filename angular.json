@@ -38,7 +38,8 @@
               "libraryName": "products",
               "libraryTarget": "umd"
             },
-            "deployUrl": "http://localhost:4001/"
+            "deployUrl": "http://localhost:4001/",
+            "aot": true
           },
           "configurations": {
             "production": {
