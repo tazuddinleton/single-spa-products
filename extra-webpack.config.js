@@ -7,12 +7,13 @@ module.exports = (config, options) => {
   singleSpaWebpackConfig.externals.push(...[
     '@kaz/auth',
     '@kaz/utility',
-    'angular/core',
-    'angular/animations',
-    'angular/common',
-    'angular/forms',
-    'angular/platform-browser',
-    'angular/router',
+    '@angular/core',
+    '@angular/animations',
+    '@angular/common',
+    '@angular/forms',
+    '@angular/platform-browser',
+    '@angular/router',
   ]);
+  singleSpaWebpackConfig.output.libraryTarget = 'system';
   return singleSpaWebpackConfig;
 };
