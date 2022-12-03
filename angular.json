@@ -36,7 +36,7 @@
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
               "libraryName": "products",
-              "libraryTarget": "umd"
+              "libraryTarget": "system"
             },
             "deployUrl": "http://localhost:4001/",
             "aot": true
