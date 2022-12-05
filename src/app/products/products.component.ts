@@ -9,7 +9,7 @@ import {AuthServiceService} from '@kaz/auth'
 })
 export class ProductsComponent implements OnInit {
   products: any[] = [];
-  constructor(private router: Router) {}
+  constructor(private router: Router, private auth: AuthServiceService) {}
 
   ngOnInit(): void {
     testExportFunc('Products');
