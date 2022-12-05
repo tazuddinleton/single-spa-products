@@ -5,7 +5,8 @@ import {EmptyRouteComponent} from './empty-route/empty-route.component';
 import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
-  {path: 'products', component: ProductsComponent, pathMatch: 'full'}
+{path: 'products/product-list', component: ProductsComponent},
+  {path: '**', component: EmptyRouteComponent}
 ];
 
 @NgModule({

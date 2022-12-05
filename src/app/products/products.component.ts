@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { testExportFunc } from '@kaz/auth';
+import {AuthServiceService} from '@kaz/auth'
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
